@@ -1,7 +1,7 @@
 p=randn([2,100000]);
 H=diag([10,5]);
 an = 30 * 180 / pi;
-R=[cos(an),-sin(an);sin(an),cos(an)];
+[cosR=(an),-sin(an);sin(an),cos(an)];
 p2=((R*H*p)+[26;61]);
 m=mean(p2')';
 s=cov(p2')';
